@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Optional: For social icons -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Бүртгэл үүсгэх 🚀</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Email хаягаа ашиглан бүртгүүлээрэй</span>
+                <input type="text" placeholder="👤 Нэр" required />
+                <input type="email" placeholder="📧 Email" required/>
+                <input type="password" placeholder="🔒 Нууц үг" required/>
+                <button type="submit">Бүртгүүлэх</button>
+            </form>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Нэвтрэх 👋</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Өөрийн бүртгэлээрээ нэвтэрнэ үү</span>
+                <input type="email" placeholder="📧 Email" required/>
+                <input type="password" placeholder="🔒 Нууц үг" required/>
+                <a href="#">Нууц үгээ мартсан уу? 🤔</a>
+                <button type="submit">Нэвтрэх</button>
+            </form>
+        </div>
+
+        <!-- Overlay Container -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <!-- Overlay Left Panel (Shown when Sign In is active) -->
+                <div class="overlay-panel overlay-left">
+                    <h1>Дахин тавтай морил! 🎉</h1>
+                    <p>Манай ертөнцөд нэгдэхийн тулд хувийн мэдээллээрээ нэвтэрнэ үү</p>
+                    <button class="ghost" id="signIn">Нэвтрэх</button>
+                </div>
+                <!-- Overlay Right Panel (Shown when Sign Up is active) -->
+                <div class="overlay-panel overlay-right">
+                    <h1>Сайн уу, найз минь! ✨</h1>
+                    <p>Хувийн мэдээллээ оруулаад InkWorld-тэй аялалаа эхлүүлээрэй</p>
+                    <button class="ghost" id="signUp">Бүртгүүлэх</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        @copyright by dipesh
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

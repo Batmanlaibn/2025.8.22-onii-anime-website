@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
+    <title>card</title>
+</head>
+<body>
+    <div class="header">
+        <button class="close-btn" onclick="closePlayer()">×</button>
+    </div>
+
+    <div class="main-container">
+        <div class="video-section">
+            <div class="video-player">
+                <div class="video-overlay">
+                    <div class="play-controls">
+                        <button class="play-btn" onclick="togglePlay()">▶</button>
+                        <button class="like-btn">♥</button>
+                        <button class="share-btn">⤴</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anime-info fade-in">
+                <div class="anime-title">
+                    <span class="rating">⭐ 0/10</span>
+                    <span class="genre-tag">N/A</span>
+                    <h2>Dandadan 2nd Season</h2>
+                </div>
+                
+                <div class="anime-description">
+                    Жижиг-гийн гэрт хараалтай зүйл хорогдсонг мэдээд залуус маань тус хараалыг 
+                    тайлахаар очсон. Тэр үед Жижиг-гийн гэрт хорогсон Эвилдл гэх хүчирхэг сүнс 
+                    Жижигийн биед орно. Ингэснээр тэд Жижиг-т авгас хадуучин туугаанд орох ба Момо.
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span>Оригинал нэр:</span>
+                        <span>Dandadan 2nd Season</span>
+                    </div>
+                    <div class="info-item">
+                        <span>Эх зохиол:</span>
+                        <span>Manga</span>
+                    </div>
+                    <div class="info-item">
+                        <span>Төлөв:</span>
+                        <span>Гарч байгаа</span>
+                    </div>
+                    <div class="info-item">
+                        <span>Гарсан жил:</span>
+                        <span>2025</span>
+                    </div>
+                    <div class="info-item">
+                        <span>Нийт анги:</span>
+                        <span>N/A</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3 class="sidebar-title">Ангиуд - 8</h3>
+                <div class="view-toggle">
+                    <button class="toggle-btn active">⊞</button>
+                    <button class="toggle-btn">A-Z</button>
+                </div>
+            </div>
+
+            <div class="episode-list" id="episodeList">
+                <div class="episode-item active" onclick="selectEpisode(this, 1)">
+                    <div class="episode-thumb"></div>
+                    <div class="episode-info">
+                        <h4>1-р анги</h4>
+                        <p>Авагра мсийн домог</p>
+                    </div>
+                </div>
+                
+                <div class="episode-item" onclick="selectEpisode(this, 2)">
+                    <div class="episode-thumb"></div>
+                    <div class="episode-info">
+                        <h4>2-р анги</h4>
+                        <p>Чентериин нүд</p>
+                    </div>
+                </div>
+                
+                <div class="episode-item" onclick="selectEpisode(this, 3)">
+                    <div class="episode-thumb"></div>
+                    <div class="episode-info">
+                        <h4>3-р анги</h4>
+                        <p>Өршээхүй дээ</p>
+                    </div>
+                </div>
+                
+                <div class="episode-item" onclick="selectEpisode(this, 4)">
+                    <div class="episode-thumb"></div>
+                    <div class="episode-info">
+                        <h4>4-р анги</h4>
+                        <p>Бид ч баларчээ</p>
+                    </div>
+                </div>
+                
+                <div class="episode-item" onclick="selectEpisode(this, 5)">
+                    <div class="episode-thumb"></div>
+                    <div class="episode-info">
+                        <h4>5-р анги</h4>
+                        <p>Бүгдээрээ шүт хонох том байна</p>
+                    </div>
+                </div>
+                
+                <div class="episode-item" onclick="selectEpisode(this, 6)">
+                    <div class="episode-thumb"></div>
+                    <div class="episode-info">
+                        <h4>6-р анги</h4>
+                        <p>Гэр буй болов</p>
+                    </div>
+                </div>
+                
+                <div class="episode-item" onclick="selectEpisode(this, 7)">
+                    <div class="episode-thumb"></div>
+                    <div class="episode-info">
+                        <h4>7-р анги</h4>
+                        <p>Нэг д сэтгэл гундчихлаа</p>
+                    </div>
+                </div>
+                
+                <div class="episode-item" onclick="selectEpisode(this, 8)">
+                    <div class="episode-thumb"></div>
+                    <div class="episode-info">
+                        <h4>8-р анги</h4>
+                        <p>Дүүрэг гэж нэрлэе</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="studio-section">
+                <h3>Студи</h3>
+                <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; text-align: center;">
+                    Science SARU
+                </div>
+                
+                <h3 style="margin-top: 20px;">Найрууларч</h3>
+                <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; text-align: center;">
+                    No director info
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo">
+        ДАНДАН
+    </div>
+
+    <script src="card.js"></script>
+</body>
+</html>
